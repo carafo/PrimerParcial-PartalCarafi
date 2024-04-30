@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212529;
+}
+
+header{
+    background-color: #212529;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#logo{
+     background: url('./Icon/Logo.png');
+     width: 80px;
+     height: 80px;
+     text-indent: -1000px;
+     overflow: hidden;
+}
+
+#logo a{
+    display: block;
+    height: 80px;
+}
+
+nav ul li{
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+
+nav a:hover{
+    color: gold;
+}
+
+/* Inicio */
+#Inicio{
+    background: linear-gradient(90deg, rgba(33,37,41,1) 0%, rgba(236,215,0,0.2) 100%) , url('./Imagenes/BannerPizza_cel.jpg') no-repeat;
+    background-size: cover;
+    height: 45vh;
+    padding: 2em;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 3px 5px black;
+}
+
+#Inicio h2{
+    font-size:4rem;
+    color: white;
+}
+
+.Boton1 button{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.Boton1 button:hover{
+    background-color: rgba(255, 187, 0);
+    box-shadow: 0 0 5px #ffc000,
+                0 0 20px #ffc000
+                0 0 60px #ffc000
+                0 0 150px ffc000;
+}
+
+p{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+/* Productos */
+#Productos{
+    text-align: center;
+    padding: 2em;
+}
+
+#Productos div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#Productos h2{
+    font-size: 3rem;
+    margin: 30px;
+}
+
+#Productos figure{
+    border: 2px solid lightgrey;
+    padding: 5px;
+    flex-basis: 100%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 8px 1px gold;
+}
+
+#Productos figure:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#Productos img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption{
+    padding: 10px;
+}
+
+h2{
+    color: gold;
+}
+
+h3{
+    color: gold;
+    font-size: 30px; 
+    padding: 5px;
+}
+
+.Descripcion{
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter; 
+    padding: 5px;
+}
+
+h4{
+    color: gold;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px; 
+    padding: 5px;
+}
+
+/* NOSOTROS */
+
+#nosotros{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#nosotros h1{
+    font-size:3rem;
+    color: gold;
+}
+
+#nosotros p{
+    margin-bottom: 35px;
+}
+
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.nosotros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nosotros-imagen{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.nosotros-imagen img{
+    max-width: 70%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.nosotros-imagen:hover img{
+    transform: scale(1.2);
+}
+
+.nosotros-contenido{
+    flex: 1;
+}
+
+.nosotros-contenido h2{
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.nosotros-contenido p{
+    line-height: 1.5;
+}
+
+.nosotros-contenido .leer-mas{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333436;
+    color: gold;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.nosotros-contenido .leer-mas:hover{
+    background-color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #333436;
+    padding: 2em;
+    color: white;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer ul{
+    display: flex;
+    gap: 10px;
+}
+
+footer ul li{
+    list-style: none;
+    font-size: 2rem;
+}
+
+footer a{
+    color: white;
+}
+
+
+
+/* MEDIA SCREEN */
+
+@media screen and (min-width: 800px){
+    header{
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between ;
+    }
+
+    #Inicio{
+        background: linear-gradient(90deg, rgba(33,37,41,1) 0%, rgba(236,215,0,0.2) 100%) , url('./Imagenes/BannerPizza.jpg') no-repeat;
+        text-align: left;
+    }
+
+    #Inicio h2{
+        font-size: 6rem;
+    }
+
+    #Productos figure{
+        flex-basis: 40%;
+    }
+
+    #nosotros{
+        padding: 0px 20px;
+    }
+
+    #nosotros h1{
+        font-size: 36px;
+    }
+
+    #nosotros p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+
+    .contenedor{
+        padding: 0px;
+    }
+
+/*     .nosotros{
+        padding: 20px;
+        flex-direction: column;
+    } */
+
+.nosotros-imagen{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+.nosotros-contenido{
+        padding: 0%;
+        font-size: 16px;
+    } 
+.nosotros-contenido .leer-mas{
+        font-size: 16px;
+    } 
+
+footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #Productos div{
+        flex-wrap: nowrap;
+    }
+
+    #Productos figure{
+        flex-basis: 30%;
+    }
+}
